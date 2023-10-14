@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>Área do Cliente</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+  <link rel="stylesheet" href="Untitled-1.css">
+
+  </head>
+  <body>
+   
+    <main class="auth-container">
+        <img src="imagens/telecall-logo.svg" class="Image" width="120" height="28.16"/>
+        <div class="auth-container-page">
+          
+    <main class="auth-container">
+      <div class="col-md-6">
+        <h1 class="heading heading-2"><strong>Novo Usuário</strong></h1><br>
+      <!-- Formulário -->
+    
+      <form action="" id="formulario" method="POST" name="formulario">
+       
+        <div class="input-group">
+          <label for="nome">Nome Completo:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            minlength="15" maxlength="60"
+            required
+            placeholder="Insira seu nome completo"
+          />
+        </div>
+        <div class="input-group">
+          <label for="cpfusuario">CPF:</label>
+          <input
+            type="text"
+            id="cpfusuario"
+            placeholder="Insira seu CPF"
+          />
+        </div>
+        
+        <div class="input-group">
+            <label for="datanascimento">Data de Nascimento:</label>
+            <input
+              type="text"
+              id="datanascimento"
+              placeholder="Insira sua data de nascimento"
+            />
+          </div>
+        <div class="input-group">
+            <label for="nomematerno">Nome Materno:</label>
+            <input
+              type="text"
+              id="nomematerno"
+              minlength="15" maxlength="60"
+              placeholder="Insira o nome de sua mãe"
+            />
+          </div>
+    
+    
+        <div class="colunas">
+          <div class="input-group">
+            <label for="telefone" onkeyup="handlePhone(event)">Celular:</label>
+            <input
+              type="text"
+              id="telefone"
+              maxlength="17"
+               placeholder="Insira seu Telefone"
+            />
+          </div>
+          <div class="input-group">
+            <label for="telefonefixo">Telefone Fixo:</label>
+            <input
+              type="text"
+              id="telefonefixo"
+              placeholder="Insira seu Telefone Fixo"
+            />
+          </div>
+          <div class="input-group">
+            <label for="endereco">Logradouro:</label>
+            <input type="text" id="endereco" placeholder="Insira seu endereço" />
+          </div>
+        </div>
+        <div class="colunas">
+          <div class="input-group">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sexo">
+              <option value="">informar...</option>
+              <option value="m">Masculino</option>
+              <option value="f">Feminino</option>
+              <option value="x">Não informar</option>
+            </select>
+          </div>
+
+          <div class="input-group">
+            <label for="email">Login:</label>
+            <input type="text" id="login" maxlength="6" placeholder="Insira seu e-mail" />
+          </div>
+
+          <div class="input-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha"  minlength="8" maxlength="8" placeholder="Insira a senha" />
+          </div>
+
+          <div class="input-group">
+            <label for="senhaconfirma">Confirme sua Senha:</label>
+            <input type="password" id="confirmaSenha" placeholder="Confirme a sua senha" />
+          </div>
+          
+        </div>
+        <footer>
+        <div class="col-md-4">
+            <input type="submit" name="btnEntrar" value="Entrar" id="btnEntrar" class="button button-primary button-full-width" />
+        
+          </div>
+          </footer>
+        
+      </form>
+    </div>
+    <div class="message" id="message"></div>
+
+    <script src="javascriptcadastro.js"></script>
+     </body>  
+     
+</html>
